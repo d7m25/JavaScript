@@ -1,0 +1,70 @@
+<html dir="rtl">
+<head>
+
+    <title>Document</title>
+    <style>
+    #b1{
+        border: thin solid black;
+        border-width: 1px;
+        border-radius: 59px;
+        font-size:30px;
+        text-align: center;
+        background-color: rgb(183, 0, 255);
+        color: seashell;
+        padding: 6%;
+        margin: 3%;
+    }
+    #b2{
+        border: thin solid black;
+        border-width: 1px;
+        border-radius: 59px;
+        font-size:30px;
+        text-align: center;
+        background-color: rgb(0, 255, 64);
+        color: seashell;
+        padding: 6%;
+        margin: 3%;
+    }
+</style>
+</head>
+<body>
+    <center>
+    <form> <div id="b1">
+        اسم الدولة : <input type="text" id="c">
+        <input type="button" value="ok" onclick="x()">
+    </div>
+    </form>
+    <br>
+    <form><div id="b2">
+        اسم العاصمة : <span id="reply"></span>
+</div>
+    </form>
+
+
+        <script>
+            function x(){
+            var c = document.getElementById("c").value
+            if(c=="السعودية")
+            document.getElementById("reply").innerHTML="الرياض"
+            
+            else if(c=="الكويت")
+            document.getElementById("reply").innerHTML="الكويت"
+            
+            else if(c=="قطر")
+            document.getElementById("reply").innerHTML="الدوحة"
+            
+            else if(c=="الامارات")
+            document.getElementById("reply").innerHTML="ابو ضبي"
+            
+            else if(c=="عمان")
+            document.getElementById("reply").innerHTML="مسقط"
+            
+            else if(c=="البحرين")
+            document.getElementById("reply").innerHTML="المنامة"
+            
+            else alert("المدخل غير صحيح")
+            }
+            </script>
+   </center>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <style>
+    #m1{
+        border: thin solid black;
+        border-width: 3px;
+        border-radius: 20px;
+        text-align: center;
+        height: 35px;
+        background-color:rgb(100, 0, 139);
+        color: black;
+        padding: 15px;
+        margin: 2px;
+        height: 100px;
+        font-size: 30px;
+    }
+    
+    #m{
+        border: thin solid black;
+        border-width: 3px;
+        border-radius: 20px;
+        text-align: center;
+        height: 35px;
+        background-color: rgb(1, 107, 24);
+        color: black;
+        padding: 15px;
+        margin: 2px;
+        height: 100px;
+    }
+        </style>
+    <title>Page Title</title>
+    
+    <script >
+        function x(){
+            var c = document.getElementById("c").value
+            if (c == "السعودية"){
+            document.getElementById("re").innerHTML ="الرياض"
+        }
+       else if (c == "الامارات"){
+            document.getElementById("re").innerHTML ="ابو ظبي"
+        }
+        else if (c == "عمان"){
+            document.getElementById("re").innerHTML ="مسقط"
+        }
+        else  if (c == "البحرين"){
+            document.getElementById("re").innerHTML ="المنامة"
+        }
+        else if (c == "الكويت"){
+            document.getElementById("re").innerHTML ="الكويت"
+        }
+        else  if (c == "قطر"){
+            document.getElementById("re").innerHTML ="الدوحة"
+        }
+        
+        
+        
+        }
+    </script>
+</head>
+<body>
+    <div id="m1">
+    <form >
+        
+        <select  id="c">
+            <option >السعودية</option>
+            <option >الامارات</option>
+            <option >عمان</option>
+            <option >البحرين</option>
+            <option >الكويت</option>
+            <option >قطر</option>
+          </select>
+        <input type="button" value="ok" onclick="x()" >
+    </div>
+        <br>
+        <div id="m">
+        اسم العاصمة :<span id ="re"></span>
+        </div>
+    </form>    
+</body>
+</html>

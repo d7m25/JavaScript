@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+.num11{
+    border: thin solid black;
+    border-width: 3px;
+    border-radius: 20px;
+    text-align: left;
+    height: 35px;
+    background-color:rgb(152, 247, 152);
+    color: black;
+    padding: 15px;
+    margin: 2px;
+    height: 60px;
+}
+
+.num22{
+    border: thin solid black;
+    border-width: 3px;
+    border-radius: 20px;
+    text-align: left;
+    height: 35px;
+    background-color: rgb(122, 112, 89);
+    color: black;
+    padding: 15px;
+    margin: 2px;
+    height: 60px;
+}
+    </style>
+    
+    <title>Page Title</title>
+    
+    <script >
+        function r(){
+            f = document.getElementById("num1").value;
+            s = document.getElementById("num2").value;
+            document.getElementById("x").innerHTML = f*s;
+        }
+
+        function m(){
+            f = document.getElementById("num1").value;
+            s = document.getElementById("num2").value;
+            document.getElementById("x").innerHTML = f/s;
+        }
+    </script>
+</head>
+<body>
+<div class="num11">
+    <form >
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <br>
+        <br>
+        <input type="button" value="multiply" onclick="r(x)"/>
+        <input type="button" value="divide" onclick="m(x)"/>
+    </form>
+</div>
+<div class="num22">
+    The Result is : <span id="x"></span>
+</div>
+</body>
+</html>

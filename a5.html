@@ -1,0 +1,229 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        #m1{
+            border: thin solid black;
+            border-width: 3px;
+            border-radius: 20px;
+            text-align: center;
+            height: 35px;
+            background-color:rgb(0, 136, 41);
+            color: black;
+            padding: 15px;
+            margin: 2px;
+            height: 100px;
+            font-size: 30px;
+        }
+        
+        #m2{
+            border: thin solid black;
+            border-width: 3px;
+            border-radius: 20px;
+            text-align: center;
+            height: 35px;
+            background-color: rgb(167, 0, 0);
+            color: black;
+            padding: 15px;
+            margin: 2px;
+            height: 100px;
+            font-size: 30px;
+        }
+        #m3{
+            border: thin solid black;
+            border-width: 3px;
+            border-radius: 20px;
+            text-align: center;
+            height: 35px;
+            background-color: rgb(0, 15, 221);
+            color: black;
+            padding: 15px;
+            margin: 2px;
+            height: 100px;
+            font-size: 30px;
+        }
+        #m4{
+            border: thin solid black;
+            border-width: 3px;
+            border-radius: 20px;
+            text-align: center;
+            height: 35px;
+            background-color: rgb(255, 0, 0);
+            color: black;
+            padding: 15px;
+            margin: 2px;
+            height: 100px;
+            font-size: 30px;
+        }
+        #m6{
+            border: thin solid black;
+            border-width: 3px;
+            border-radius: 20px;
+            text-align: center;
+            background-color:rgb(255, 255, 255);
+            color: black;
+            padding: 15px;
+            margin: 2px;
+            height: 350px;
+            font-size: 30px;
+        }
+            </style>
+                <script >
+                    //الرايل
+                    function r(){
+                        f = document.getElementById("num1").value;
+                        document.getElementById("x").innerHTML = f/12.15;
+                    }
+            
+                    function m(){
+                        f = document.getElementById("num1").value;
+                        document.getElementById("q").innerHTML = f/3.7;
+                    }
+                    function n(){
+                        f = document.getElementById("num1").value;
+                        document.getElementById("w").innerHTML = f*5.04;
+                    }
+                    </script>
+                    <script >
+
+                    //الدينار
+                    function b(){
+                        f = document.getElementById("num2").value;
+                        document.getElementById("e").innerHTML = f*12.15;
+                    }
+                    function v(){
+                        f = document.getElementById("num2").value;
+                        document.getElementById("c").innerHTML = f*3.23;
+                    }
+                    function z(){
+                        f = document.getElementById("num2").value;
+                        document.getElementById("l").innerHTML = f*60.06;
+                    }
+                </script>
+                <script>
+
+                    //الدولار
+                    function k(){
+                        f = document.getElementById("num3").value;
+                        document.getElementById("j").innerHTML = f*3.7;
+                    }
+                    function h(){
+                        f = document.getElementById("num3").value;
+                        document.getElementById("g").innerHTML = f/3.23;
+                    }
+                    function s(){
+                        f = document.getElementById("num3").value;
+                        document.getElementById("d").innerHTML = f*18.57;
+                    }
+                </script>
+                <script>
+
+                    //الليرة
+                    function a(){
+                        f = document.getElementById("num4").value;
+                        document.getElementById("p").innerHTML = f/5.04;
+                    }
+                    function o(){
+                        f = document.getElementById("num4").value;
+                        document.getElementById("i").innerHTML = f/60.06;
+                    }
+                    function u(){
+                        f = document.getElementById("num4").value;
+                        document.getElementById("y").innerHTML = f/18.57;
+                    }
+                    
+                </script>
+</head>
+<body>
+    <div id="m6">
+    <div id="m1">
+        <form >
+            الريال السعودي :<input type="text" id="num1">
+            <br>
+            <br>
+            <input type="button" value="دينار" onclick="r(x)"/>
+            <input type="button" value="دولار" onclick="m(q)"/>
+            <input type="button" value="ليرة" onclick="n(w)"/>
+        </form>
+    </div>
+    <div id="m1">
+         دينار كويتي :
+         <span id="x"></span>
+         <br>
+         دولار امريكي :
+         <span id="q"></span>
+         <br>
+         ليرة تركية :
+        <span id="w"></span>
+    </div>
+        </div>
+        <div id="m6">
+        <div id="m2">
+        <form >
+            <form >
+                  الدينار الكويتي :<input type="text" id="num2">
+                <br>
+                <br>
+                <input type="button" value="الريال" onclick="b(e)"/>
+                <input type="button" value="دولار" onclick="v(c)"/>
+                <input type="button" value="ليرة" onclick="z(l)"/>
+            </form>
+    </div>
+    <div id="m2">
+          الريال السعودي :
+        <span id="e"></span>
+        <br>
+        دولار امريكي :
+        <span id="c"></span>
+        <br>
+        ليرة تركية :
+       <span id="l"></span>
+</div>
+</div>
+    <div id="m6">
+        <div id="m3">
+            <form >
+                  الدولار الامريكي :<input type="text" id="num3">
+                <br>
+                <br>
+                <input type="button" value="الريال" onclick="k(j)"/>
+                <input type="button" value="الدينار" onclick="h(g)"/>
+                <input type="button" value="ليرة" onclick="s(d)"/>
+            </form>
+    </div>
+    <div id="m3">
+          الريال السعودي :
+        <span id="j"></span>
+        <br>
+         الدينار الكويتي : 
+        <span id="g"></span>
+        <br>
+        ليرة تركية :
+       <span id="d"></span>
+</div>
+</div>
+    <div id="m6">
+        <div id="m4">
+            <form >
+                  الليرة التركية :<input type="text" id="num4">
+                <br>
+                <br>
+                <input type="button" value="الريال" onclick="a(p)"/>
+                <input type="button" value="الدينار" onclick="o(i)"/>
+                <input type="button" value="الدولار" onclick="u(y)"/>
+            </form>
+    </div>
+    <div id="m4">
+          الريال السعودي :
+        <span id="p"></span>
+        <br>
+          الدينار الكويتي :
+        <span id="i"></span>
+        <br>
+          الدولار الامريكي :
+       <span id="y"></span>
+</div>
+</div>
+    
+</body>
+</html>
